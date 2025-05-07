@@ -86,4 +86,4 @@ Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICE
 
 ---
 
-Feito por [Seu Nome](https://github.com/harrisalexandre)
+Feito por [Harris Alexandre](https://www.instagram.com/_harrisalexandre/)

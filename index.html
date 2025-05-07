@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColorPalette Pro</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <nav>
+        <h1>ColorPalette Pro</h1>
+    </nav>
+
+    <div class="container">
+        <section class="counter-section">
+            <p id="colorCounter">Que legal! Já temos 0 cores cadastradas!</p>
+        </section>
+
+        <section class="recent-section">
+            <div class="recent-header">
+                <h3>Últimas Cores Adicionadas</h3>
+                <button id="viewAllBtn" onclick="toggleAllColors()">Ver todas</button>
+            </div>
+            <div id="recentColorsList" class="recent-colors-container"></div>
+        </section>
+
+        <section class="form-section">
+            <div class="form-toggle" onclick="toggleForm()">
+                <span>Adicionar Nova Cor</span>
+                <span>▼</span>
+            </div>
+            <div class="form-content">
+                <div class="form-group">
+                    <label for="colorName">Código/Nome da Cor *</label>
+                    <input type="text" id="colorName">
+                </div>
+                <div class="form-group">
+                    <label for="brand">Marca *</label>
+                    <input type="text" id="brand">
+                </div>
+                <div class="form-group">
+                    <label for="hexCode">Código Hex (opcional)</label>
+                    <input type="text" id="hexCode" placeholder="#FFFFFF">
+                </div>
+                <button onclick="addOrUpdateColor()">Salvar Cor</button>
+            </div>
+        </section>
+
+        <section class="table-section">
+            <h3>Cores Registradas</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pré-visualização</th>
+                        <th>Código/Nome da Cor</th>
+                        <th>Marca</th>
+                        <th>Hex</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="colorTable"></tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="js/colors-db.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

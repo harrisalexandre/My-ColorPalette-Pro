@@ -1,4 +1,4 @@
-# ColorPalette Pro
+# My ColorPalette Pro
 
 ![GitHub license](https://img.shields.io/github/license/seu-usuario/colorpalette-pro?style=flat-square)
 ![GitHub last commit](https://img.shields.io/github/last-commit/seu-usuario/colorpalette-pro?style=flat-square)
